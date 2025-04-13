@@ -22,8 +22,8 @@ public class WeatherSummary {
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
 
         Scanner scan = new Scanner(System.in);
-        while (scan.hasNextLine()) {
-            System.out.println(scan.nextLine());
+        while (scan.hasNextDouble()) {
+            System.out.println(scan.nextDouble());
         }
     }
 }
