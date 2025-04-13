@@ -26,9 +26,13 @@ public class WeatherSummary {
         double max = 0;
         double min = 0;
         boolean firstTemp = true;
+        double sum = 0;
+        int count = 0;
     
         while (scan.hasNextDouble()) {
             double current = scan.nextDouble();
+            sum += current;
+            count++;
 
             if (firstTemp) {
                 max = current;
@@ -41,7 +45,12 @@ public class WeatherSummary {
             }
 
         }
+
+        double averageTemp = sum / count;
+
         System.out.println("Max: " + max);
         System.out.println("Min: " + min);
+        System.out.println("Average: " + averageTemp);
+
     }
 }
